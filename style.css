@@ -1,0 +1,52 @@
+body {
+	background-color: #ccc;
+	margin: 0;
+}
+.pagebox {
+	background-color: #fff;
+	width:900px;
+	margin: 0 auto;
+	padding: 40px
+}
+p {
+	color:black; font-size: 14px;
+	font-family: "Georgia";
+}
+.highlight {
+	color:orange;
+}
+.callout {color:blue
+}
+h1 {
+	color:red;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+#bottom {
+	color:red
+}
+.siteheader {
+background-color: #f0f0f0;
+margin-bottom: 30px;
+width: 100%;
+min-height: 100px;
+text-align: center;
+font-size: 30px;
+}
+.maincontent {
+/*background-color: #eddcba; */
+width: 100%;
+}
+.sitefooter {
+background-color: #94cdd1;
+	margin-top: 30px;
+	width: 100%;
+	min-height: 100px;
+}
+div {
+        border: 1px solid black;
+      }
+img {
+	height: 30%;
+	width: 30%;
+
+}
