@@ -1,0 +1,327 @@
+.preload  
+/* Stps the transitions on page lunch */
+{
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+body {
+	height:100%;
+    Margin:50px;
+}
+
+nav {
+	list-style: none;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+	position: sticky;
+	top: 0;
+	
+	
+}
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+	display: inline-block; /* problem should be display-inline-bloack */
+	
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.6);
+	width: 600px;
+	
+}
+nav li {
+	
+	display:inline; /* C.V. display-inline */
+	margin: 0px;
+	
+	
+	}
+
+nav li a {
+	 /* C.V. position-absolute */
+	padding-top: 10px;
+	padding-bottom: 10px;
+    text-decoration: none;
+    color:black;
+	display: inline-block;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	float: left;
+	width: 200px;
+	z-index: 1;
+	background: #813E3F;
+
+	
+	
+}
+nav li a {
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	
+	
+}
+
+li a:hover {
+	/*background: radial-gradient(circle at 50%, #000 30%, #333 60%, #eee 100%, #333 100%);
+	color: rgba(255,255,255,1);*/
+	box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.3);
+}
+
+/*
+.active {
+	background-color: orange;
+}
+*/
+
+/*
+
+.box-container {
+	padding-top: 30px;
+	height: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.box {
+	overflow: hidden;
+	display: block;
+	width: 290px;
+	height: 290px;
+	border-radius: 4px;
+	transition: 0.3s ease;
+}
+.video {
+	transition: 0.3s ease;
+	width: 290px;
+	height: 290px;
+}
+.box:hover,.video:hover  {
+	display: block;
+	width: 560px;
+	height: 290px;
+}
+
+*/
+.maincontent {
+	background-color: #94cdd1;
+	margin-top: 30px;
+	height: 100%;
+	width: 100%;
+	min-height: 100px;
+}
+.box-container {
+	display: block;
+	
+	align-content: center;
+	justify-content: center;
+	width: 900px;
+}
+.box {
+	position: relative;
+	overflow: hidden;
+	width: 290px;
+	height: 290px;
+	text-align: center;
+	padding: 0px;
+	margin: 10px;
+	border-radius: 4px;
+	border-radius-webkit-: 4px;
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.6);
+}
+iframe, .item {
+	position: absolute;
+	display: block;
+	margin: 0px;
+    overflow: hidden;
+    width: 290px;
+	height: 290px;
+	transition: all .3s ease-in-out;
+	border-radius: 4px;
+	border-radius-webkit-: 4px;
+	-webkit-mask-image: -webkit-radial-gradient(white, black); /*---> to keep round corners on hover in Safari<---*/
+}
+
+a.text {
+	position: relative;
+	padding-bottom: 30px;
+	padding-top: 240px;
+	display: block;
+	text-decoration: none;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-weight: 900;
+	letter-spacing: 2px;
+	color: white;
+	opacity: 0.85;
+	font-size: 20px;
+	margin: 0px;
+	border-radius: 4px;	
+	transition: all .5s ease-in-out;
+	transition-delay: 0.3s;
+	text-shadow: 1px 1px 1px  #000000;
+}
+a.text2 {
+	position: relative;
+	padding-bottom: 30px;
+	padding-top: 240px;
+	display: block;
+	text-decoration: none;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-weight: 900;
+	letter-spacing: 2px;
+	color: white;
+	opacity: 0.85;
+	font-size: 20px;
+	margin: 0px;
+	border-radius: 4px;	
+	transition: all .5s ease-in-out;
+	transition-delay: 0.3s;
+	text-shadow: 1px 1px 1px  #000000;
+}
+.animation {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	width: 290px;
+	height: 290px;
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,0.5));
+	border-radius: 4px;
+	border-radius-webkit-: 4px;
+	margin: 0px;
+	transition: all .3s ease-in-out;
+}
+.box:hover .item {
+    width: 515.55555555556px;
+	height: 290px;
+	border-radius: 4px;
+	border-radius-webkit-: 4px;	
+}
+.box:hover {
+	width: 514.5px;
+	height: 290px;
+	box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.3);
+}
+.box:hover .item iframe {
+	width: 515.55555555556px;
+	height: 290px;
+}
+.box:hover .animation  {
+	width: 515.55555555556px;
+	height: 290px;
+	background: no-repeat;
+	border-radius: 4px;
+	border-radius-webkit-: 4px;
+	display: contents;
+}
+.box:hover .text  {
+	padding-top: 30px;
+	opacity: 0;
+	color: white;
+}
+.box:hover .text2 {
+	padding-top: 30px;
+	opacity: 0;
+	color: white;
+}
+div {
+	/*border: 1px solid black;*/
+}
+/* the second stile of box*/
+.box2 {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	width: 290px;
+	height: 290px;
+	text-align: center;
+	padding: 0px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 4px;
+	border-radius-webkit-: 4px;
+    transition: all .3s ease-in-out;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.6);
+}
+.item2 {
+	position: relative;
+    margin: 0px;
+    overflow: hidden;
+    width: 290px;
+	height: 290px;
+	border-radius: 4px;
+	border-radius-webkit-: 4px;
+	-webkit-mask-image: -webkit-radial-gradient(white, black); /*---> to keep round corners on hoverin Safari<---*/	
+}
+.item2 img {
+	position: relative;
+    transition: all 0.3s;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border-radius: 4px;
+	border-radius-webkit-: 4px;	
+}
+.box2:hover {
+	box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.3);
+}
+.box2:hover .item2 img {
+    transform: scale(1.1);
+	transform-webkit-: scale(1.1);
+	border-radius: 4px;
+	border-radius-webkit-: 4px;	
+}
+a.ab2:hover, .home2:hover { 
+	opacity: 1;
+	color: white;
+	background: no-repeat;
+	border-radius: 4px;
+	border-radius-webkit-: 4px;
+}
+ a.ab2 {
+	padding-bottom: 28px;
+	padding-top: 240px;
+	display: block;
+	text-decoration: none;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-weight: 900;
+	letter-spacing: 2px;
+	color: white;
+	opacity: 0.85;
+	font-size: 20px;
+	margin: 0px;
+	border-radius: 4px;
+	border-radius-webkit-: 4px;
+}
+.home2 {
+	position: absolute;
+	bottom: 0px;
+	width: 290px;
+	height: 290px;
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,0.5));
+	border-radius: 4px;
+	border-radius-webkit-: 4px;
+	margin: 0px;
+	transition: all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+}
+/* the second stile of box*/
+.sitefooter {
+	background-color: #94cdd1;
+	margin-top: 30px;
+	min-height: 100px;
+	width: 900px;
+	bottom: 0;
+}
+.pagebox {
+	background-color: white;
+	width:900px;
+	margin:  auto;
+	padding: 40px;
+}
+.pimg2 {
+	width: 100%;
+	border: 1px solid black;
+}

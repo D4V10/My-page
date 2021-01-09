@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no"?>
+
+<link href="gardaient.css" rel="stylesheet" type="text/css" />
+
+
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <style type="text/css"><![CDATA[
+       
+    ]]></style>
+  </defs>
+  <rect x="10" height="180" y="10" width="180" id="MyRect"/>
+</svg>
+
+
+
+<svg class="gradient1" width="200" height="38" viewBox="0 0 200 38">
+    		<defs>
+      		<linearGradient id="gradient1">
+        		<stop offset="5%" stop-color="#F60" />
+        		<stop offset="95%" stop-color="#FF6" />
+      		</linearGradient>
+    		</defs>
+			
+    		<rect width="200" height="38" x="0" y="0" />
+  			</svg>

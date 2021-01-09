@@ -1,0 +1,11 @@
+
+/* CSS Document */
+
+/* Gradient */
+svg.gradient rect { fill: url(#gradient); }
+
+#gradient stop { transition: .5s all; }
+
+svg.gradient:hover #gradient stop:first-child { stop-color: blue; }
+
+svg.gradient:hover #gradient stop:last-child { stop-color: green; }
