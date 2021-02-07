@@ -1,32 +1,67 @@
 <!DOCTYPE html>
-
 <html>
-
- <head>
-	<title>This is my page title.</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
- </head>
-
- <body>
-	<nav>
-	 <ul>
-	   <li><a class="active" href="Index.html" >Home</a></li>
-	   <li><a href="about.html" >About</a></li>
-	   <li><a href="contact.html" >Contact</a></li>
-	 </ul>
-	</nav>
-	<div class="pagebox"> 
-	 <div class="siteheader">
-       <a href="index.html">Home</a>
-	   <a href="about.html">About</a>
-	   <a href="contact.html">Contact</a>
-	 </div>
-     <div class="maincontent"><h1>This is a heading 1 element</h1>
-	   <p>Hello world, this is a simple paragraph.</p>
-	 </div>
-	<div class="sitefooter"></div>
-	</div>
-	
- </body>
-
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>D.S.HOME.</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body class="preload">
+        <div class="pagebox-c">
+            <div class="wrapper">
+                <div class="rellax "><img src="images/back-4.jpg"></div>
+                
+            </div>
+            <div class="siteheader">
+                <nav>
+                    <ul>
+                        <li><a  href="Index.html" >Work</a></li>
+                        <li><a href="about.html" >About</a></li>
+                        <li><a class="active" href="contact.html" >Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="title"><a>Contact me yes</a></div>
+            
+            <div class="box-container1-c">
+                <div class="box1-c">
+                    <div class="item1-c">
+                    </div>
+                    <div class="home1-c">
+                        <a class="ab-c" >David Schwarcz</a>
+                        <a href="mailto:schwarcz1987@gmail.com" class="ab-c" >schwarcz1987@gmail.com</a>
+                        <a class="ab-c" >07477556373</a>    
+                        <a class="ab-c">32A West Park</a>
+                        <a class="ab-c">BS8 2LT</a>
+                        <a class="ab-c">Bristol</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sitefooter"></div>
+        <script>
+            $(window).load(function() {
+                $("body").removeClass("preload");
+            });		
+            window.onscroll = function() {scrollFunction()};
+        </script>
+        <script src="js-scripts/rellax.js"></script>
+        <script>
+            // Accepts any class name
+            var rellax = new Rellax('.rellax');
+        </script>
+    </body>
+<!--
+<div class="box-container">
+<div class="box"> 					
+<a href="index.html">Home</a>
+</div>
+<div class="box">
+<a href="about.html">About</a>
+</div>
+<div class="box">
+<a href="contact.html">Contact</a>
+</div>
+</div>
+-->
 </html>
